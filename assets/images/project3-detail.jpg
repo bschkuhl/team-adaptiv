@@ -1,0 +1,57 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  <rect x="50" y="50" width="700" height="400" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1a365d">Neural Network Optimization</text>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4a5568">Algorithm Performance Comparison</text>
+  
+  <!-- Performance chart -->
+  <line x1="120" y1="380" x2="680" y2="380" stroke="#64748b" stroke-width="2"/>
+  <line x1="120" y1="380" x2="120" y2="180" stroke="#64748b" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="110" y="185" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#64748b">100%</text>
+  <text x="110" y="230" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#64748b">80%</text>
+  <text x="110" y="280" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#64748b">60%</text>
+  <text x="110" y="330" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#64748b">40%</text>
+  <text x="110" y="380" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#64748b">20%</text>
+  
+  <!-- X-axis labels -->
+  <text x="200" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Standard SGD</text>
+  <text x="350" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Adam</text>
+  <text x="500" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Our Method</text>
+  <text x="650" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">AdaGrad-M</text>
+  
+  <!-- Performance bars -->
+  <rect x="180" y="280" width="40" height="100" fill="#94a3b8"/>
+  <rect x="330" y="230" width="40" height="150" fill="#3b82f6"/>
+  <rect x="480" y="180" width="40" height="200" fill="#22c55e"/>
+  <rect x="630" y="200" width="40" height="180" fill="#3182ce"/>
+  
+  <!-- Legend -->
+  <rect x="520" y="160" width="15" height="15" fill="#22c55e"/>
+  <text x="545" y="172" font-family="Arial, sans-serif" font-size="12" fill="#374151">34% Faster Convergence</text>
+  
+  <!-- Network diagram -->
+  <g transform="translate(150, 220)">
+    <!-- Input layer -->
+    <circle cx="0" cy="0" r="8" fill="#6b7280"/>
+    <circle cx="0" cy="25" r="8" fill="#6b7280"/>
+    <circle cx="0" cy="50" r="8" fill="#6b7280"/>
+    
+    <!-- Hidden layer -->
+    <circle cx="60" cy="-10" r="8" fill="#3b82f6"/>
+    <circle cx="60" cy="15" r="8" fill="#3b82f6"/>
+    <circle cx="60" cy="40" r="8" fill="#3b82f6"/>
+    <circle cx="60" cy="65" r="8" fill="#3b82f6"/>
+    
+    <!-- Output layer -->
+    <circle cx="120" cy="10" r="8" fill="#ef4444"/>
+    <circle cx="120" cy="35" r="8" fill="#ef4444"/>
+    
+    <!-- Connections -->
+    <line x1="8" y1="0" x2="52" y2="-10" stroke="#9ca3af" stroke-width="1"/>
+    <line x1="8" y1="25" x2="52" y2="15" stroke="#9ca3af" stroke-width="1"/>
+    <line x1="68" y1="15" x2="112" y2="10" stroke="#9ca3af" stroke-width="2"/>
+    <line x1="68" y1="40" x2="112" y2="35" stroke="#9ca3af" stroke-width="2"/>
+  </g>
+</svg>
